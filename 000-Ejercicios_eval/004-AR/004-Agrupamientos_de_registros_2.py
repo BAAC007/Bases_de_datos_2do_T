@@ -18,7 +18,7 @@ etiquetas = [fila[1] for fila in filas]  # stock names
 peso = [fila[0] for fila in filas]    # counts
 
 pt.figure(figsize=(12, 6))
-pt.bar(etiquetas, peso)
+pt.bar(peso, etiquetas)
 pt.xlabel("Productos")
 pt.ylabel("Peso")
 pt.xticks(rotation=45, ha='right')
